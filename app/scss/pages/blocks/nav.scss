@@ -1,0 +1,48 @@
+.nav {
+  margin-top: 35px;
+
+  ul {
+    display: flex;
+
+    li + li {
+      margin-left: 30px;
+    }
+
+    li {
+      a {
+        display: block;
+        position: relative;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: -4px;
+          left: 0;
+          background-color: #18d26e;
+          visibility: hidden;
+          width: 0px;
+          transition: all 0.3s ease-in-out 0s;
+        }
+      }
+    }
+  }
+}
+
+.nav a:hover:before,
+.nav li:hover > a:before,
+.nav .active > a:before {
+  visibility: visible;
+  width: 25px;
+}
+
+.nav a:hover,
+.nav .active > a,
+.nav li:hover > a {
+  color: #fff;
+}
