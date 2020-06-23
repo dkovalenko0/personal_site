@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Starter</title>
+    <title>Portfolio</title>
     <meta content="" name="descriptison" />
     <meta content="" name="keywords" />
 
@@ -12,6 +12,12 @@
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
 
     <!-- Template Main CSS File -->
@@ -229,17 +235,25 @@
         </div>
 
         <div class="row portfolio-container">
-          <div class="portfolio-item">
+          <div class="portfolio-item" id="test">
             <div class="portfolio-wrap">
               <img src="./assets/images/portfolio/GoSurf.png" alt="GoSurf" />
               <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>APP</p>
                 <div class="portfolio-links">
-                  <a href="./assets/images/portfolio/GoSurf.png" class="venobox"
+                  <a
+                    href="./assets/images/portfolio/GoSurf.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
                     ><img src="./assets/images/icons/plus.svg" alt="plus"
                   /></a>
-                  <a href="#"
+                  <a
+                    href="#gosurf"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="inline"
+                    class="venobox"
+                    title="Project Details"
                     ><img src="./assets/images/icons/chain.svg" alt="chain"
                   /></a>
                 </div>
@@ -258,16 +272,23 @@
                 <div class="portfolio-links">
                   <a
                     href="./assets/images/portfolio/family_psychohelth.png"
+                    data-gall="portfolioGallery"
                     class="venobox"
                     ><img src="./assets/images/icons/plus.svg" alt="plus"
                   /></a>
-                  <a href="#"
+                  <a
+                    href="#family_psychohelth"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="inline"
+                    class="venobox"
+                    title="Project Details"
                     ><img src="./assets/images/icons/chain.svg" alt="chain"
                   /></a>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="portfolio-item">
             <div class="portfolio-wrap">
               <img
@@ -280,10 +301,16 @@
                 <div class="portfolio-links">
                   <a
                     href="./assets/images/portfolio/PoraTrip.png"
+                    data-gall="portfolioGallery"
                     class="venobox"
                     ><img src="./assets/images/icons/plus.svg" alt="plus"
                   /></a>
-                  <a href="#"
+                  <a
+                    href="#pora_trip"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="inline"
+                    class="venobox"
+                    title="Project Details"
                     ><img src="./assets/images/icons/chain.svg" alt="chain"
                   /></a>
                 </div>
@@ -297,10 +324,18 @@
                 <h4>App 1</h4>
                 <p>APP</p>
                 <div class="portfolio-links">
-                  <a href="./assets/images/portfolio/Travel.png" class="venobox"
+                  <a
+                    href="./assets/images/portfolio/Travel.png"
+                    class="venobox"
+                    data-gall="portfolioGallery"
                     ><img src="./assets/images/icons/plus.svg" alt="plus"
                   /></a>
-                  <a href="#"
+                  <a
+                    href="#travel"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="inline"
+                    class="venobox"
+                    title="Project Details"
                     ><img src="./assets/images/icons/chain.svg" alt="chain"
                   /></a>
                 </div>
@@ -423,6 +458,134 @@
       </div>
     </section>
     <!-- End Contacts -->
+
+    <!-- ======= Work details Section ======= -->
+    <section id="gosurf">
+      <div class="container portfolio-details">
+        <div class="row">
+          <div class="portfolio-slider">
+            <h2 class="portfolio-title">
+              GoSurf page details
+            </h2>
+            <div class="slider-items">
+              <img src="./assets/images/portfolio/GoSurf.png" alt="GoSurf" />
+            </div>
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: HTML/CSS/JS</li>
+              <li><strong>Project date</strong>: 01 March, 2019</li>
+              <li>
+                <strong>Project URL</strong>:
+                <a href="https://dkovalenko0.github.io/GoSurf/" target="_blank"
+                  >https://dkovalenko0.github.io/GoSurf/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="family_psychohelth">
+      <div class="container portfolio-details">
+        <div class="row">
+          <div class="portfolio-slider">
+            <h2 class="portfolio-title">
+              Family Psychohelth page details
+            </h2>
+            <div class="slider-items">
+              <img
+                src="./assets/images/portfolio/family_psychohelth.png"
+                alt="family_psychohelth"
+              />
+            </div>
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: HTML/CSS/JS</li>
+              <li><strong>Project date</strong>: 29 Mai, 2019</li>
+              <li>
+                <strong>Project URL</strong>:
+                <a
+                  href="https://dkovalenko0.github.io/family_psychohelth/"
+                  target="_blank"
+                  >https://dkovalenko0.github.io/family_psychohelth/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pora_trip">
+      <div class="container portfolio-details">
+        <div class="row">
+          <div class="portfolio-slider">
+            <h2 class="portfolio-title">
+              PoraTrip page details
+            </h2>
+            <div class="slider-items">
+              <img
+                src="./assets/images/portfolio/PoraTrip.png"
+                alt="PoraTrip"
+              />
+            </div>
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: HTML/CSS/JS</li>
+              <li><strong>Project date</strong>: 15 November, 2019</li>
+              <li>
+                <strong>Project URL</strong>:
+                <a
+                  href="https://dkovalenko0.github.io/PoraTrip/"
+                  target="_blank"
+                  >https://dkovalenko0.github.io/PoraTrip/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="travel">
+      <div class="container portfolio-details">
+        <div class="row">
+          <div class="portfolio-slider">
+            <h2 class="portfolio-title">
+              Travel page details
+            </h2>
+            <div class="slider-items">
+              <img src="./assets/images/portfolio/Travel.png" alt="Travel" />
+            </div>
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: HTML/CSS/JS</li>
+              <li><strong>Project date</strong>: 10 December, 2019</li>
+              <li>
+                <strong>Project URL</strong>:
+                <a href="https://dkovalenko0.github.io/Travel/" target="_blank"
+                  >https://dkovalenko0.github.io/Travel/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Work details -->
 
     <!-- Scripts -->
     <script src="assets/js/vendors.min.js?cb=123"></script>

@@ -75,6 +75,12 @@
   $(document).ready(function () {
     $(".venobox").venobox({
       share: false,
+      bgcolor: "rgba(0, 0, 0, 0.8)",
     });
+
+    // $(".slider-items").slick({
+    //   infinite: true,
+    //   dots: true,
+    // });
   });
 })(jQuery);
