@@ -1,13 +1,30 @@
 .about {
+  .row {
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+
   .personal-photo {
     img {
       width: 340px;
       height: auto;
+
+      @media (max-width: 992px) {
+        width: 80%;
+      }
     }
   }
 
   .personal-info {
     width: 710px;
+    margin-left: 30px;
+
+    @media (max-width: 992px) {
+      width: inherit;
+      margin-left: 0;
+      margin-top: 15px;
+    }
   }
 
   ul {
@@ -24,6 +41,10 @@
       }
       &:not(:first-child) {
         margin-top: 10px;
+      }
+
+      @media (max-width: 1140px) {
+        font-size: 14.5px;
       }
 
       strong {
@@ -49,6 +70,16 @@
         padding: 20px;
         background: rgba(255, 255, 255, 0.08);
         transition: ease-in-out 0.3s;
+
+        @media (max-width: 992px) {
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+
+        @media (max-width: 768px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
 
         &:hover {
           background: rgba(255, 255, 255, 0.12);

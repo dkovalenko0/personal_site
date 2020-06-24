@@ -36,6 +36,12 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -66,8 +72,25 @@ p {
 
 .container {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   max-width: 1140px;
   margin: 0 auto;
+
+  @media (max-width: 1140px) {
+    max-width: 960px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 720px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 576px) {
+  }
 }
 
 section {
@@ -97,6 +120,15 @@ section .container h3 {
   font-weight: 700;
   font-size: 26px;
   color: #18d26e;
+}
+
+@media (max-width: 768px) {
+  section {
+    top: 120px;
+  }
+  section.section-show {
+    top: 80px;
+  }
 }
 
 .section-title h2 {
@@ -133,4 +165,33 @@ section .container h3 {
 .row {
   display: flex;
   justify-content: space-between;
+}
+
+.vbox-next,
+.vbox-prev {
+  @media (max-width: 576px) {
+    display: none !important;
+  }
+}
+
+.vbox-next {
+  right: 15px;
+
+  @media (max-width: 1140px) {
+    right: 5px;
+  }
+
+  @media (max-width: 768px) {
+    right: 0;
+  }
+}
+
+.vbox-prev {
+  @media (max-width: 1140px) {
+    left: 5px;
+  }
+
+  @media (max-width: 768px) {
+    left: 0;
+  }
 }
